@@ -4,112 +4,214 @@
     <title>CityLife Volunteers</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f8ff;
+            background-color: #f8f9fa;
             color: #333;
         }
         header {
-            background-color: #2c3e50;
+            background: linear-gradient(135deg, #3498db, #2ecc71);
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         .container {
             width: 90%;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
         .program {
             background: white;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 30px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            display: flex;
+            transition: transform 0.3s ease;
+        }
+        .program:hover {
+            transform: translateY(-5px);
+        }
+        .program-image {
+            width: 40%;
+            background-size: cover;
+            background-position: center;
+        }
+        .program-content {
+            width: 60%;
+            padding: 25px;
         }
         .program h2 {
-            color: #27ae60;
+            color: #2c3e50;
             margin-top: 0;
+            font-size: 24px;
         }
         .btn {
             display: inline-block;
-            background: #e74c3c;
+            background: linear-gradient(135deg, #e74c3c, #f39c12);
             color: white;
-            padding: 8px 15px;
-            border-radius: 4px;
+            padding: 10px 20px;
+            border-radius: 50px;
             text-decoration: none;
-            margin-top: 10px;
+            margin-top: 15px;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
         }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin: 30px 0;
-        }
-        .feature {
-            background: #3498db;
-            color: white;
-            padding: 15px;
-            border-radius: 8px;
-            flex: 1 1 200px;
+        .tag {
+            display: inline-block;
+            background: #e8f4fc;
+            color: #3498db;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 14px;
+            margin-right: 8px;
+            margin-bottom: 8px;
         }
         footer {
             background: #2c3e50;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 30px;
+            padding: 30px;
+            margin-top: 50px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
+        .hero-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0;
+            color: #2c3e50;
+            font-size: 32px;
+        }
+        .highlight {
+            background-color: #fffde7;
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>CityLife Volunteers</h1>
-        <p>Make your city better - one volunteer at a time</p>
+        <h1 style="font-size: 42px; margin-bottom: 10px;">CityLife Volunteers</h1>
+        <p style="font-size: 20px;">Join us in making our city greener, cleaner, and more connected</p>
     </header>
 
     <div class="container">
-        <img src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="City skyline">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Happy volunteers" class="hero-image">
         
-        <h2>Our Volunteer Programs</h2>
+        <h2 class="section-title">Our Volunteer Programs</h2>
         
         <div class="program">
-            <h2>Urban Garden Stewardship</h2>
-            <p>Transform vacant lots into community gardens. Help plant, maintain gardens, and lead workshops.</p>
-            <p><strong>Special:</strong> Earn green points for local discounts!</p>
-            <a href="#" class="btn">Join Now</a>
+            <div class="program-image" style="background-image: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="program-content">
+                <h2>Urban Garden Stewardship</h2>
+                <p>Transform vacant lots into vibrant community gardens and urban farms. Help with planting, workshops, and food distribution.</p>
+                <div>
+                    <span class="tag">Planting</span>
+                    <span class="tag">Workshops</span>
+                    <span class="tag">Sustainability</span>
+                </div>
+                <p><span class="highlight">Green Points:</span> Earn credits for local eco-business discounts!</p>
+                <a href="#" class="btn">Join This Program</a>
+            </div>
         </div>
         
         <div class="program">
-            <h2>City Bike Mechanic Crew</h2>
-            <p>Fix bikes for those in need and organize bike tours.</p>
-            <p><strong>Special:</strong> Sponsor a bike for someone!</p>
-            <a href="#" class="btn">Join Now</a>
+            <div class="program-image" style="background-image: url('https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="program-content">
+                <h2>City Bike Mechanic Crew</h2>
+                <p>Repair and maintain bicycles for low-income residents. Organize bike tours and exploration events.</p>
+                <div>
+                    <span class="tag">Repairs</span>
+                    <span class="tag">Tours</span>
+                    <span class="tag">Transportation</span>
+                </div>
+                <p><span class="highlight">Bike Sponsorship:</span> Donate a bike to someone in need!</p>
+                <a href="#" class="btn">Join This Program</a>
+            </div>
         </div>
         
         <div class="program">
-            <h2>Digital Literacy for Seniors</h2>
-            <p>Teach seniors to use technology to connect with family.</p>
-            <p><strong>Special:</strong> Tech buddy matching system!</p>
-            <a href="#" class="btn">Join Now</a>
+            <div class="program-image" style="background-image: url('https://images.unsplash.com/photo-1581093450021-4a7360e9a7b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="program-content">
+                <h2>Digital Literacy for Seniors</h2>
+                <p>Teach seniors to use smartphones, computers, and social media to connect with family and services.</p>
+                <div>
+                    <span class="tag">Tech Help</span>
+                    <span class="tag">Tutoring</span>
+                    <span class="tag">Social Connection</span>
+                </div>
+                <p><span class="highlight">Tech Buddies:</span> Get matched based on shared interests!</p>
+                <a href="#" class="btn">Join This Program</a>
+            </div>
         </div>
         
         <div class="program">
-            <h2>City Cleanup & Art Murals</h2>
-            <p>Clean streets and create beautiful murals.</p>
-            <p><strong>Special:</strong> See progress on our live map!</p>
-            <a href="#" class="btn">Join Now</a>
+            <div class="program-image" style="background-image: url('https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="program-content">
+                <h2>City Cleanup & Art Murals</h2>
+                <p>Beautify neighborhoods through cleanups and creative public art projects.</p>
+                <div>
+                    <span class="tag">Cleanups</span>
+                    <span class="tag">Art</span>
+                    <span class="tag">Community</span>
+                </div>
+                <p><span class="highlight">Live Map:</span> Track cleanup progress in real-time!</p>
+                <a href="#" class="btn">Join This Program</a>
+            </div>
         </div>
         
         <div class="program">
-            <h2>Meals for
+            <div class="program-image" style="background-image: url('https://images.unsplash.com/photo-1505576399279-565b52d4ac71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="program-content">
+                <h2>Meals for the Homeless</h2>
+                <p>Prepare and serve nutritious meals through our central kitchen and food trucks.</p>
+                <div>
+                    <span class="tag">Cooking</span>
+                    <span class="tag">Serving</span>
+                    <span class="tag">Outreach</span>
+                </div>
+                <p><span class="highlight">Meal Tracker:</span> See how many meals we've served today!</p>
+                <a href="#" class="btn">Join This Program</a>
+            </div>
+        </div>
+        
+        <div class="program">
+            <div class="program-image" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');"></div>
+            <div class="program-content">
+                <h2>Youth Mentorship</h2>
+                <p>Guide young people through education, life skills, and career exploration.</p>
+                <div>
+                    <span class="tag">Mentoring</span>
+                    <span class="tag">Tutoring</span>
+                    <span class="tag">Career Help</span>
+                </div>
+                <p><span class="highlight">Peer Mentoring:</span> Older youth mentor younger participants!</p>
+                <a href="#" class="btn">Join This Program</a>
+            </div>
+        </div>
 
+        <div style="text-align: center; margin: 60px 0;">
+            <a href="#" class="btn" style="padding: 15px 30px; font-size: 20px; background: linear-gradient(135deg, #9b59b6, #3498db);">Become a Volunteer Today!</a>
+        </div>
+    </div>
 
+    <footer>
+        <p style="font-size: 18px;">CityLife Volunteers &copy; 2023 | Making our city better together</p>
+        <p style="margin-top: 15px;">
+            <a href="#" style="color: #2ecc71; margin: 0 10px;">About Us</a>
+            <a href="#" style="color: #2ecc71; margin: 0 10px;">Contact</a>
+            <a href="#" style="color: #2ecc71; margin: 0 10px;">FAQ</a>
+        </p>
+    </footer>
+</body>
+</html>
