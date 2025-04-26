@@ -90,6 +90,7 @@ footer {
   background-position: center; /* Centers the image */
   border-radius: 8px; /* Adds rounded corners */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow */
+  margin: 0 auto; /* Centers the image horizontally */
 }
 
 .program-content {
