@@ -1,0 +1,15 @@
+body{
+    background-color:#dcfae1;
+    font-family: sans-serif;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  
+  p{
+    text-align:left;
+  }
+  
+  img{
+    height:300px;
+  }
