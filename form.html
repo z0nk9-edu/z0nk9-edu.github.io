@@ -8,39 +8,32 @@
 </head>
 <body>
     <div class="container">
-        <h1>Volunteer Skills Form</h1>
-        <form id="skillsForm" action="/submit" method="POST">
-            <label>Select Your Skills:</label>
-            <div>
-                <label>
+        <h1 class="form-title">Volunteer Skills Form</h1>
+        <form id="skillsForm" action="/submit" method="POST" class="form">
+            <label class="form-label">Select Your Skills:</label>
+            <div class="form-checkbox-group">
+                <label class="form-checkbox">
                     <input type="checkbox" name="skills[]" value="planting"> Planting
                 </label>
-                <br>
-                <label>
+                <label class="form-checkbox">
                     <input type="checkbox" name="skills[]" value="workshops"> Workshops
                 </label>
-                <br>
-                <label>
+                <label class="form-checkbox">
                     <input type="checkbox" name="skills[]" value="sustainability"> Sustainability
                 </label>
-                <br>
-                <label>
+                <label class="form-checkbox">
                     <input type="checkbox" name="skills[]" value="repairs"> Repairs
                 </label>
-                <br>
-                <label>
+                <label class="form-checkbox">
                     <input type="checkbox" name="skills[]" value="tutoring"> Tutoring
                 </label>
-                <br>
-                <label>
+                <label class="form-checkbox">
                     <input type="checkbox" name="skills[]" value="cooking"> Cooking
                 </label>
-                <br>
-                <label>
+                <label class="form-checkbox">
                     <input type="checkbox" name="skills[]" value="art"> Art
                 </label>
             </div>
-            <br>
             <button type="submit" id="submitButton" class="btn">Submit</button>
         </form>
     </div>

@@ -14,23 +14,33 @@ header {
 }
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
   padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .program:hover {
   transform: translateY(-5px);
 }
 .btn {
-  display: inline-block;
-  background: linear-gradient(135deg, #e74c3c, #f39c12);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  margin-top: 15px;
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
+  color: white;
+  background: linear-gradient(135deg, #3498db, #2ecc71);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+.btn:hover {
+  background: linear-gradient(135deg, #2ecc71, #3498db);
 }
 footer {
   background: #2c3e50;
@@ -117,4 +127,51 @@ footer {
   border-radius: 4px;
   font-size: 12px;
   margin-right: 5px;
+}
+
+/* Form title */
+.form-title {
+  text-align: center;
+  font-size: 28px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Form label */
+.form-label {
+  display: block;
+  font-size: 18px;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+/* Checkbox group */
+.form-checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Individual checkbox */
+.form-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-checkbox:hover {
+  background-color: #dfe6e9;
+}
+
+.form-checkbox input {
+  margin-right: 10px;
+  accent-color: #3498db;
 }
