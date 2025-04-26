@@ -131,6 +131,113 @@
             <a href="#" style="color: #2ecc71; margin: 0 10px;">FAQ</a>
         </p>
     </footer>
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>CityLife Volunteers</title>
+    <style>
+        /* Fixed layout CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .program-card {
+            display: flex;
+            margin-bottom: 30px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .program-image {
+            flex: 0 0 40%;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .program-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #2ecc71;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+        }
+
+        /* Specific program images */
+        #urban-garden { background-image: url('https://images.unsplash.com/photo-1585320806297-9794b3e4eeae'); }
+        #bike-mechanic { background-image: url('https://images.unsplash.com/photo-1507035895480-2b3156c31fc8'); }
+        #digital-literacy { background-image: url('https://images.unsplash.com/photo-1581093450021-4a7360e9a7b5'); }
+        #city-cleanup { background-image: url('https://images.unsplash.com/photo-1547981609-4b6bfe67ca0b'); }
+        #meals { background-image: url('https://images.unsplash.com/photo-1505576399279-565b52d4ac71'); }
+        #youth-mentorship { background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f'); }
+
+        @media (max-width: 768px) {
+            .program-card {
+                flex-direction: column;
+            }
+            .program-image {
+                height: 200px;
+                width: 100%;
+                flex: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Urban Garden Stewardship -->
+        <div class="program-card">
+            <div class="program-image" id="urban-garden"></div>
+            <div class="program-content">
+                <h2>Urban Garden Stewardship</h2>
+                <p>Transform vacant lots into community gardens and urban farms. Help with planting, workshops, and food distribution.</p>
+                <p><strong>Special:</strong> Earn green points for local discounts!</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <!-- City Bike Mechanic Crew -->
+        <div class="program-card">
+            <div class="program-image" id="bike-mechanic"></div>
+            <div class="program-content">
+                <h2>City Bike Mechanic Crew</h2>
+                <p>Repair bikes for those in need and organize bike tours. Sponsor a bike for someone in need!</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Digital Literacy for Seniors -->
+        <div class="program-card">
+            <div class="program-image" id="digital-literacy"></div>
+            <div class="program-content">
+                <h2>Digital Literacy for Seniors</h2>
+                <p>Teach seniors to use technology through our "Tech Buddy" matching system.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+
+        <!-- Add remaining programs following the same structure -->
+    </div>
 </body>
 </html>
+
 
