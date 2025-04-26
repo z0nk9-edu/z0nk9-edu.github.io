@@ -93,8 +93,8 @@ footer {
   font-weight: bold;
 }
 .ai-button {
-  display: block; /* Ensures the button behaves like a block element */
-  margin: 20px auto; /* Centers the button horizontally */
+  display: block; 
+  margin: 20px auto;
   background: linear-gradient(135deg, #e74c3c, #f39c12);
   color: white;
   padding: 10px 20px;
@@ -104,6 +104,6 @@ footer {
   font-size: 16px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(231, 76, 60, 0.3);
-  border: none; /* Removes default button border */
-  cursor: pointer; /* Adds a pointer cursor on hover */
+  border: none; 
+  cursor: pointer; 
 }
