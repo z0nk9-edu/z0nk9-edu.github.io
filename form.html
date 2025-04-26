@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Skills Form</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Volunteer Skills Form</h1>
+        <form id="skillsForm" action="/submit" method="POST">
+            <label>Select Your Skills:</label>
+            <div>
+                <label>
+                    <input type="checkbox" name="skills[]" value="planting"> Planting
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="skills[]" value="workshops"> Workshops
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="skills[]" value="sustainability"> Sustainability
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="skills[]" value="repairs"> Repairs
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="skills[]" value="tutoring"> Tutoring
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="skills[]" value="cooking"> Cooking
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="skills[]" value="art"> Art
+                </label>
+            </div>
+            <br>
+            <button type="submit" id="submitButton" class="btn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // Add event listener to the form
+        document.getElementById('skillsForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting to the server
+
+            // Get all selected checkboxes
+            const selectedSkills = Array.from(document.querySelectorAll('input[name="skills[]"]:checked'))
+                .map(checkbox => checkbox.value);
+
+            // Print the selected skills to the console
+            if (selectedSkills.length > 0) {
+                console.log('Selected Skills:', selectedSkills.join(', '));
+            } else {
+                console.log('No skills selected.');
+            }
+        });
+
+        // Add event listener to the button
+        document.getElementById('submitButton').addEventListener('click', function() {
+            console.log('Submit button was pressed.');
+        });
+    </script>
+</body>
+</html>
