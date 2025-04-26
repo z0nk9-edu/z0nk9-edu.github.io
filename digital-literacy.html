@@ -3,7 +3,7 @@
 <head>
     <title>Digital Literacy for Seniors | CityLife</title>
     <style>
-        /* Same core CSS as other pages */
+        /* Consistent styling with main site */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
@@ -23,6 +23,18 @@
             margin: 0 auto;
             padding: 20px;
         }
+        .program-detail {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            margin: 20px 0;
+        }
+        .program-image {
+            width: 100%;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
         .btn {
             display: inline-block;
             background: linear-gradient(135deg, #e74c3c, #f39c12);
@@ -30,18 +42,13 @@
             padding: 10px 20px;
             border-radius: 50px;
             text-decoration: none;
-            margin-top: 15px;
+            margin: 10px 5px;
             font-weight: bold;
         }
-        .program-detail {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-        }
-        .program-image {
-            width: 100%;
-            border-radius: 12px;
+        .highlight {
+            background-color: #e8f4fc;
+            padding: 20px;
+            border-radius: 8px;
             margin: 20px 0;
         }
         .testimonial {
@@ -54,61 +61,66 @@
 </head>
 <body>
     <header>
-        <h1>Digital Literacy for Seniors</h1>
-        <p>Bridging the technology gap across generations</p>
+        <h1>Digital Literacy Program</h1>
+        <p>Connecting generations through technology</p>
     </header>
 
     <div class="container">
         <div class="program-detail">
-            <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a7b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" class="program-image" alt="Senior using tablet with volunteer">
-            
-            <h2>About This Program</h2>
-            <p>Since 2019, we've helped over 1,200 seniors gain confidence with technology. Our volunteers provide patient, one-on-one assistance to help older adults stay connected with loved ones and access essential services online.</p>
-            
-            <div class="testimonial">
-                <h3>📱 Success Story</h3>
-                <p>"My volunteer helped me video chat with my grandkids in Australia! Now we talk every Sunday." - Martha, 78</p>
-            </div>
+            <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a7b5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                 class="program-image" 
+                 alt="Senior citizen learning smartphone with volunteer">
 
-            <h2>Volunteer Opportunities</h2>
-            <ul>
-                <li><strong>Tech Tutoring:</strong> Weekly 1-hour sessions at senior centers</li>
-                <li><strong>Workshop Leading:</strong> Teach group classes on specific topics</li>
-                <li><strong>Tech Support Hotline:</strong> Answer questions by phone</li>
-                <li><strong>Device Setup:</strong> Help configure smartphones/tablets</li>
-            </ul>
+            <h2>About the Program</h2>
+            <p>We help seniors aged 65+ become confident with modern technology through personalized 1-on-1 sessions and group workshops. Since 2020, we've helped over 850 seniors stay connected with their families and access essential services online.</p>
 
-            <h2>Tech Buddy Matching</h2>
-            <p>Our unique matching system pairs volunteers with seniors based on:</p>
-            <ul>
-                <li>Shared interests (gardening, cooking, etc.)</li>
-                <li>Technology learning goals</li>
-                <li>Availability and location</li>
-            </ul>
-            <p>Matches meet weekly for 6 weeks (in-person or Zoom).</p>
-
-            <h2>Common Teaching Topics</h2>
-            <div style="columns: 2; margin: 20px 0;">
+            <div class="highlight">
+                <h3>📱 What We Teach</h3>
                 <ul>
+                    <li>Smartphone/tablet basics</li>
                     <li>Video calling (Zoom, FaceTime)</li>
-                    <li>Online shopping & banking</li>
-                    <li>Social media basics</li>
-                    <li>Using healthcare portals</li>
-                    <li>Smartphone photography</li>
-                    <li>Spotify & podcast apps</li>
+                    <li>Online safety & security</li>
+                    <li>Social media navigation</li>
+                    <li>Digital health services</li>
                 </ul>
             </div>
 
-            <h2>Upcoming Events</h2>
+            <h2>Volunteer Opportunities</h2>
+            <div style="columns: 2; margin: 20px 0;">
+                <ul>
+                    <li>1-on-1 tech tutoring sessions</li>
+                    <li>Weekly "Tech Café" helpers</li>
+                    <li>Workshop presenters</li>
+                    <li>Instructional video creators</li>
+                    <li>Device setup assistants</li>
+                    <li>Tech hotline operators</li>
+                </ul>
+            </div>
+
+            <div class="testimonial">
+                <h3>❤️ Success Story</h3>
+                <p>"My volunteer Sarah taught me to video call my grandkids in Canada. Now we have weekly story time!"<br>- Margaret, 72</p>
+            </div>
+
+            <h2>Tech Buddy System</h2>
+            <p>We match volunteers with seniors based on:</p>
             <ul>
-                <li>May 20: "Master Your iPhone" Workshop</li>
-                <li>June 7: Internet Safety Seminar</li>
-                <li>July 12: Family Tech Help Day</li>
+                <li>Shared interests (gardening, cooking, etc.)</li>
+                <li>Technical learning goals</li>
+                <li>Preferred schedule</li>
+                <li>Language preferences</li>
             </ul>
 
-            <div style="margin-top: 40px;">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>May 25: "Master Your iPhone" Workshop</li>
+                <li>June 8: Internet Safety Seminar</li>
+                <li>July 15: Family Tech Help Day</li>
+            </ul>
+
+            <div style="margin-top: 30px;">
                 <a href="index.html" class="btn">← Back to All Programs</a>
-                <a href="signup.html?program=digital" class="btn" style="margin-left: 20px;">📱 Become a Tech Buddy</a>
+                <a href="signup-tech.html" class="btn">Become a Tech Buddy →</a>
             </div>
         </div>
     </div>
