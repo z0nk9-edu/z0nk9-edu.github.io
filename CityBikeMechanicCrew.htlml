@@ -1,29 +1,94 @@
-<!-- In your program cards, update the links like this: -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CityLife Volunteers</title>
+    <style>
+        /* Program Card Styles */
+        .program-card {
+            display: flex;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .program-image {
+            flex: 0 0 40%;
+            min-height: 250px;
+            background: url('https://images.unsplash.com/photo-1507035895480-2b3156c31fc8') center/cover;
+        }
+
+        .program-content {
+            padding: 25px;
+            flex: 1;
+        }
+
+        /* Program Details Modal */
+        .program-modal {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            z-index: 1000;
+            max-width: 600px;
+            width: 90%;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            cursor: pointer;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- City Bike Program Card -->
 <div class="program-card">
-    <div class="program-image" id="bike-mechanic"></div>
+    <div class="program-image"></div>
     <div class="program-content">
         <h2>City Bike Mechanic Crew</h2>
-        <p>Repair bikes for those in need...</p>
-        <a href="#bike-mechanic" class="btn" onclick="showProgram(event, 'bike-mechanic')">Learn More</a>
+        <p>Repair and maintain bicycles for low-income residents.</p>
+        <button onclick="openModal('bike-modal')" class="btn">Learn More</button>
     </div>
 </div>
 
-<!-- Add this script right before </body> -->
+<!-- Bike Program Modal -->
+<div id="bike-modal" class="program-modal">
+    <span class="modal-close" onclick="closeModal()">×</span>
+    <h2>City Bike Mechanic Crew</h2>
+    <p>Full program details here...</p>
+    <button onclick="closeModal()">Close</button>
+</div>
+
 <script>
-function showProgram(event, programId) {
-    event.preventDefault(); // Stop page jump
-    const allPrograms = document.querySelectorAll('.program-details');
-    allPrograms.forEach(program => program.style.display = 'none');
-    
-    const selectedProgram = document.getElementById(programId);
-    if(selectedProgram) {
-        selectedProgram.style.display = 'block';
-        selectedProgram.scrollIntoView({ behavior: 'smooth' });
+// Modal Control Functions
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Prevent scrolling
+}
+
+function closeModal() {
+    const modals = document.querySelectorAll('.program-modal');
+    modals.forEach(modal => modal.style.display = 'none');
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+    if (event.target.className === 'program-modal') {
+        closeModal();
     }
 }
 </script>
 
-<!-- Program Details Sections -->
-<div id="bike-mechanic" class="program-details" style="display: none;">
-    <!-- Your bike mechanic program details here -->
-</div>
+</body>
+</html>
